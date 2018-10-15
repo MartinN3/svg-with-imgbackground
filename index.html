@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.4.1/cropper.min.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<h2>Vlozte obrazek</h2>
+	<label class="btn btn-primary btn-upload" title="Upload image file" for="inputImage">
+		<input id="inputImage" accept="image/*" name="file" type="file">
+	</label>
+	<button id="apply">Ukaz nahled</button>
+	<div style="display: flex;">
+		<div id="image-cropper__wrapper" style="width: 500px; height: 500px;" >
+			<img id="image-cropper__base">
+		</div>
+		<div id="previews" style="width: 500px; height: 500px;"></div>
+	</div>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.4.1/cropper.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
